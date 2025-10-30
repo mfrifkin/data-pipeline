@@ -13,12 +13,12 @@ st.title("🌤️ NYC Daily Weather Forecast")
 
 # ----- CONNECT TO MONGODB -----
 # Replace with your actual connection URI
-# client = MongoClient("mongodb+srv://mrifkin_db_user:I0uHXt05wtWA5t7x@cluster0.bfmieps.mongodb.net/project_data?appName=Cluster0")
-# client = MongoClient("mongodb+srv://mrifkin_db_user:I0uHXt05wtWA5t7x@cluster0.bfmieps.mongodb.net/?retryWrites=true&w=majority&tlsAllowInvalidCertificates=true")
-client = MongoClient(
-    "mongodb+srv://mrifkin_db_user:I0uHXt05wtWA5t7x@cluster0.bfmieps.mongodb.net/?retryWrites=true&w=majority&tlsAllowInvalidCertificates=true",
-    serverSelectionTimeoutMS=5000
-)
+client = MongoClient("mongodb+srv://mrifkin_db_user:I0uHXt05wtWA5t7x@cluster0.bfmieps.mongodb.net/project_data?appName=Cluster0")
+# # client = MongoClient("mongodb+srv://mrifkin_db_user:I0uHXt05wtWA5t7x@cluster0.bfmieps.mongodb.net/?retryWrites=true&w=majority&tlsAllowInvalidCertificates=true")
+# client = MongoClient(
+#     "mongodb+srv://mrifkin_db_user:I0uHXt05wtWA5t7x@cluster0.bfmieps.mongodb.net/?retryWrites=true&w=majority&tlsAllowInvalidCertificates=true",
+#     serverSelectionTimeoutMS=5000
+# )
 db = client.project_data
 collection = db.weather
 
