@@ -2,3 +2,4 @@ streamlit
 pymongo
 pandas
 requests
+pymongo>=4.6
